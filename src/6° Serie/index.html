@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" async></script>
+  
+  <title>Quiz JavaScript</title>
+</head>
+<body>
+  <div class="container">
+    <div class="questions-container hide">
+      <span class="question">Pergunta aqui?</span>
+
+      <div id="box">
+        <div class="preenchimento">
+          <h1 id="pre" onmouseenter="carregar()" onmouseleave="sair()"><span id="porcetagem">0%</span></h1>
+        </div>
+      </div>
+
+      <img class="imagem" src="" alt="">
+      <div class="mensagem">
+      </div>
+
+      
+
+      <div class="answers-container">
+        <button class="answer button">Resposta 1</button>
+        <button class="answer button">Resposta 2</button>
+        <button class="answer button">Resposta 3</button>
+        <button class="answer button">Resposta 4</button>
+      </div>
+    </div>
+    <div class="controls-container">
+      <button class="start-quiz button">Começar Quiz!</button>
+      <button class="next-question  hide">Próximo</button>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
+</body>
+<script>
+  var botao_proxim = document.querySelector('.next-question')
+  
+  botao_proxim.onclick = function() {
+    $mensagem.classList.toggle('remove')
+  }
+
+
+  
+</script>
+</html>

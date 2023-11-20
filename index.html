@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/Bootstrap/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Brainstorm</title>
+</head>
+
+
+<body>
+    <header class="container2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark container-fluid">
+            <a class="navbar-brand" href="../../../index.html"><img class="logo"
+                    src="https://avatars.githubusercontent.com/u/62769652?s=48&v=4" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="//https">Quiz <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Scans</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Contato
+                        </a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item" href="#">Celular</a></li>
+                            <li><a class="dropdown-item" href="#">email</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">F.A.Q</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled"></a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    <h1 class="titulo-desafio">Desafio cerebral</h1>
+                </ul>
+
+
+                <!--Barra de busca-->
+                <form class="form-inline my-2 my-lg-0">
+                    <input id="searchInput" class="form-control mr-sm-2" type="search"
+                        placeholder="Busca oque quer aqui" aria-label="Search">
+                    <button onclick="searchManga()" class="btn btn-outline-success my-2 my-sm-0" type="submit"><img
+                            class="icon_busca" src="./src/img/busca01.png" alt="">
+                    </button>
+                    <div class="content"></div>
+                </form>
+                <!--Barra de busca-->
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+
+
+        <img class="img-cerebro" src="brain.png" alt="">
+
+        <div class="botoes">
+            <a href="./src/5° Serie/index.html">5° Serie</a>
+            <a href="./src/6° Serie/index.html">6° Serie</a>
+            <a href="http://">7° Serie</a>
+            <a href="http://">8° Serie</a>
+            <a href="http://">1° Ano</a>
+            <a href="http://">2° Ano</a>
+        </div>
+
+        <div class="titulo">
+            <h1>Pronto para testa os seus conhecimentos?</h1>
+            <h2>Escolha o seu nivel de conhecimento</h2>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="imgs-logo">
+            <img src="https://avatars.githubusercontent.com/u/62769652?s=48&v=4" alt="">
+            <span>+</span>
+            <img src="./src/img/icone.png" alt="">
+            <span>Projeto site de quiz feito em comjunto</span>
+        </div>
+
+
+
+    </footer>
+</body>
+<script src="./src/Bootstrap/jquery.slim.min.js"></script>
+<script src="./script.js"></script>
+
+</html>

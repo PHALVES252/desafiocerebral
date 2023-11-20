@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(0,142,255,1) 0%, rgba(0,255,171,1) 31%, rgba(185,255,0,1) 55%, rgba(0,255,239,1) 100%);
+}
+
+.imagem {
+  width: 760px;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  /* background-color: #ffffff; */
+  width: 90%;
+  max-width: 800px;
+
+  /* border: 2px solid #e1e1e6;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 0 2px 2px; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.questions-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.question {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Oswald;
+}
+
+.answers-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: -30px;
+  /* border: 4px solid yellowgreen; */
+}
+
+.answer:disabled {
+  cursor: not-allowed;
+}
+
+.next-question {
+  transform: translate(190%, -630%);
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0px;
+  height: 50px;
+  padding: 0 32px;
+  font-family: Oswald;
+  transition: filter 0.1s;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
+.next-question:hover {
+  background-color: rgb(24, 24, 24) !important;
+}
+
+.button {
+  background-color: #bbbbbb;
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  height: 70px;
+  width: 300px;
+  padding: 0 32px;
+  font-family: Oswald;
+  transition: filter 0.1s;
+}
+
+.button:not(:disabled):hover {
+  filter: brightness(1.10);
+}
+
+/* Finish game */
+.final-message {
+  margin-top: 5rem;
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.final-message span {
+  display: block;
+  margin-top: 8px;
+}
+
+/* General styles */
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: #7cff96;
+}
+
+.incorrect {
+  background-color: #ff6161;
+}
+body {
+  background-color: white !important;
+}
+button {
+  cursor:  pointer !important;
+}
+
+/*mensagem de resposta correta*/
+
+.alternativa_correta {
+  position: absolute;
+  transform: translate(-75%, -120%);
+  background-color: rgba(0, 165, 187, 0.76);
+  width: 500px;
+  height: 300px;
+}
+
+
+.alternativa_correta h1 {
+  color: white;
+  font-weight: bold;
+  font-family: Oswald;
+  margin-left: 1px;
+  border-bottom: 1px solid white;
+}
+.alternativa_correta p {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  color: white;
+  /* border: 1px solid white; */
+  width: 450px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+/*mensagem de resposta errada*/
+
+.alternativa_errada {
+  position: absolute;
+  transform: translate(-75%, -120%);
+  background-color: rgba(187, 0, 0, 0.76);
+  width: 500px;
+  height: 300px;
+}
+
+.alternativa_errada h1 {
+  color: white;
+  font-weight: bold;
+  font-family: Oswald;
+  margin-left: 1px;
+  border-bottom: 1px solid white;
+}
+.alternativa_errada p {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  color: white;
+  /* border: 1px solid white; */
+  width: 450px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+.remove {
+  display: none;
+}
+/*barra de preenchimento*/
+#box {
+  border: 2px solid black;
+  cursor: pointer;
+  width: 900px;
+  background-color: black;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#box h1 {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  min-width: 900px;
+  transition: all 10s ease-in-out;
+  text-align: center;
+  font-family: Oswald;
+}
+
+
+.preenchimento {
+  background: rgb(0, 255, 140);
+  width: calc(0%);
+  transition: all 2s ease-in-out;
+  border-radius: 30px;
+}
+
+/* .preenchimento:hover {
+  transition: all 10s ease-in-out;
+  background: rgb(0, 255, 140);
+  width: calc(100%);
+} */

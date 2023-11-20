@@ -1,0 +1,8 @@
+let resposta_errada = `
+      <div class="alternativa_errada">
+      <h1>ERRADO</h1>
+      <p>${questions[currentQuestionIndex].curiosidade}</p>
+      </div>
+      `;
+      $mensagem.innerHTML = resposta_errada;
+      $mensagem.classList.remove('remove')
